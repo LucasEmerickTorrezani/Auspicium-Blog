@@ -1,0 +1,404 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+header {
+  background-image: url("Saira.jpg");
+  background-size: cover;
+  background-position: 12% 40%;
+  min-height: 300px;
+  position: relative;
+  padding: 40px 60px 50px 60px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #011d04;
+}
+
+header h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.2rem;
+  color: #ffffff;
+  text-shadow: -2px -2px 0 #1e5f0a, 2px -2px 0 #1e5f0a, -2px 2px 0 #1e5f0a,
+    2px 2px 0 #1e5f0a;
+  letter-spacing: 3px;
+  margin-left: -35px;
+}
+
+header .subtexto {
+  position: absolute;
+  left: 21%;
+  bottom: -17px; /* ajusta pra subir/descer */
+  transform: translateX(-50%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.95rem;
+  color: #ffffff;
+  max-width: 70%;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+footer {
+  background-color: #2e5b2e;
+  color: #ffffff;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+main {
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  text-align: justify;
+  text-indent: 1.5em; /* recuo da primeira linha */
+  margin-bottom: 1em;
+}
+
+h1 {
+  color: #011d04;
+  font-weight: bold;
+}
+
+h2,
+h3 {
+  text-align: center;
+  color: #2e5b2e;
+  margin-top: 0;
+}
+
+ul,
+ol {
+  margin-left: 2em;
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+nav {
+  background-color: #3f7a3f;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.destaques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.card {
+  background-color: #fafafa;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: justify;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #3f7a3f;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #2e5b2e;
+}
+
+.imagem-destaque {
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+.imagem-id1 {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+.imagem-id2 {
+  width: 400px;
+  height: auto;
+  margin: 10px;
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+.comedouro {
+  width: 700px;
+  height: auto;
+  margin: 10px;
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+.observador {
+  width: 500px;
+  height: auto;
+  margin: 10px;
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+.familia {
+  width: 500px;
+  height: auto;
+  margin: 10px;
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+.jabuticabeira {
+  width: 500px;
+  height: auto;
+  margin: 10px;
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+.cameratrap {
+  width: 500px;
+  height: auto;
+  margin: 10px;
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+.equipamentos-lista {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  line-height: 1.6;
+}
+
+.equipamentos-lista h2 {
+  text-align: center;
+  color: #1c4a28;
+  margin-bottom: 25px;
+  font-size: 2em;
+  border-bottom: 2px solid #cce3d1;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.equip-item {
+  background-color: #f5f7f3;
+  border-left: 6px solid #2f6d3a;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.equip-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.equip-item h3 {
+  color: #1c4a28;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+
+.equip-item p {
+  text-align: justify;
+  margin: 0;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .equipamentos-lista {
+    padding: 20px;
+  }
+
+  .equip-item {
+    padding: 16px;
+  }
+
+  .equipamentos-lista h2 {
+    font-size: 1.6em;
+  }
+}
+
+.imagem-equipamentos {
+  width: 500px;
+  height: auto;
+  margin: 10px;
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+.imagem-cards {
+  width: 300px;
+  height: auto;
+  margin: 10px;
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  border-radius: 8px;
+}
+.imagem-ninho {
+  width: 700px;
+  height: 400px;
+  margin: 10px;
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+.recent-posts {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.recent-posts h2 {
+  color: #2f5d2f;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.post-card {
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.post-card img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.post-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.post-info h3 {
+  margin-top: 0;
+  color: #2f5d2f;
+}
+
+.post-info a {
+  text-decoration: none;
+  color: #2f5d2f;
+  font-weight: bold;
+}
+
+.post-info a:hover {
+  text-decoration: underline;
+}
+
+.post-date {
+  font-size: 0.9rem;
+  color: #666;
+}
